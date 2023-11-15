@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+
+    'server',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,7 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+
+DEFAULT_FIELD_TYPE = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'account.Account'
